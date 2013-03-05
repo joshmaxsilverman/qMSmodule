@@ -1,0 +1,670 @@
+MultiFun, a cell function assignment schema.
+
+Gretta Serres and Monica Riley, March 2007.
+Some of the categories have been assigned by Nicole Perna et al. at ASAP (http://asap.ahabs.wisc.edu/annotation/php/ASAP1.htm).
+Categories with changes/additions in this edition:
+1.6.18 Siderophore biosynthesis
+
+1 Metabolism
+	1.1 Carbon compound utilization
+		1.1.1 Carbohydrates/Carbon compounds
+			1.1.1.1 D-allose catabolism
+			1.1.1.2 2,5-ketogluconate metabolism
+			1.1.1.3 D-arabinose catabolism
+			1.1.1.4 D-galactarate catabolism
+			1.1.1.5 D- galacturonate catabolism
+			1.1.1.6 D-glucarate catabolism
+			1.1.1.7 D-glucuronate catabolism
+			1.1.1.8 L-arabinose catabolism
+			1.1.1.9 L-idonate catabolism
+			1.1.1.10 L-lyxose metabolism
+			1.1.1.11 Fucose catabolism
+			1.1.1.12 Galactitol catabolism
+			1.1.1.13 D-galactonate catabolism
+			1.1.1.14 Lactose degradation
+			1.1.1.15 Mannose catabolism
+			1.1.1.16 Rhamnose catabolism
+			1.1.1.17 Sorbitol degradation
+			1.1.1.18 Trehalose degradation, low osmolarity+
+			1.1.1.19 Xylose catabolism
+			1.1.1.20 Glycol degradation
+			1.1.1.21 Mannitol degradation
+			1.1.1.22 Ribose degradation
+			1.1.1.23 Galactose degradation
+			1.1.1.24 Sorbose degradation
+			1.1.1.25 L-ascorbate degradation
+			1.1.1.26 2-O-alpha-mannosyl-D-glycerate degradation
+			1.1.1.27 Trehalose degradation, high osmolarity
+			1.1.1.28 L-galactonate catabolism
+			1.1.1.29 Malate utilization
+		1.1.2 Fatty acids (fatty acid oxidation)
+			1.1.2.2 3-phenylpropionate and 3-(3-hydroxyphenyl)propionate degradation
+			1.1.2.3 Propionate degradation
+			1.1.2.4 Anaerobic fatty acid oxidation pathway
+			1.1.2.5 Propionyl-CoA (methylmalonyl pathway)
+			1.1.2.6 Aerobic fatty acid oxidation pathway
+			1.1.2.7 Acetoacetate degradation
+		1.1.3 Amino acids
+			1.1.3.1 L-alanine degradation
+			1.1.3.2 L-serine degradation
+			1.1.3.3 Arginine degradation II
+			1.1.3.4 Glutamate degradation
+			1.1.3.5 Glycine cleavage
+			1.1.3.6 Proline utilization
+			1.1.3.7 Threonine catabolism
+			1.1.3.8 Tryptophan utilization
+			1.1.3.9 L-cysteine catabolism
+			1.1.3.10 Lysine cleavage
+			1.1.3.11 Histidine degradation
+			1.1.3.12 Leucine degradation
+			1.1.3.13 Methionine degradation
+			1.1.3.14 Valine degradation
+			1.1.3.15 Phenylalanine, tyrosine degradation
+			1.1.3.16 Glutamine
+			1.1.3.17 Taurine
+			1.1.3.18 Arginine degradation III (agmatinase pathway)
+			1.1.3.19 Aspartate degradation
+			1.1.3.20 Isoleucine degradation
+		1.1.4 Amines
+			1.1.4.1 Phenylethylamine degradation
+			1.1.4.2 Carnitine degradation
+			1.1.4.3 Ornithine degradation
+		1.1.5 Others
+			1.1.5.1 Phenylacetic acid degradation
+			1.1.5.2 Ethanol degradation
+			1.1.5.3 Eugenol catabolism
+			1.1.5.4 Beta-ketoadipate pathway
+			1.1.5.5 Mandelate catabolism
+			1.1.5.6 (deoxy)ribose phosphate degradation
+			1.1.5.7 Formaldehyde degradation
+	1.2 Macromolecule degradation
+		1.2.1 RNA
+		1.2.2 DNA
+		1.2.3 Proteins/peptides/glycopeptides
+		1.2.4 Polysaccharides
+			1.2.4.1 Glycogen catabolism
+			1.2.4.2 Chitin catabolism
+	1.3 Energy metabolism (carbon)
+		1.3.1 Glycolysis
+		1.3.2 Pentose phosphate shunt, oxidative branch
+		1.3.3 Pyruvate dehydrogenase
+		1.3.4 Tricarboxylic acid cycle
+		1.3.5 Fermentation
+		1.3.6 Aerobic respiration
+		1.3.7 Anaerobic respiration
+		1.3.8 ATP proton motive force interconversion
+		1.3.9 Entner-Doudoroff pathway
+		1.3.10 Formate oxidation
+		1.3.11 Acyclic isoprenoid degradation
+	1.4 Energy production/transport
+		1.4.1 Electron donor 
+		1.4.2 Electron acceptor 
+		1.4.3 Electron carrier 
+	1.5 Building block biosynthesis
+		1.5.1 Amino acids
+			1.5.1.1 Glutamate biosynthesis III
+			1.5.1.2 Glutamine
+			1.5.1.3 Arginine
+			1.5.1.4 Proline
+			1.5.1.5 Aspartate
+			1.5.1.6 Asparagine
+			1.5.1.7 Lysine, diaminopimelate
+			1.5.1.8 Threonine
+			1.5.1.9 Methionine
+			1.5.1.10 Glycine
+			1.5.1.11 Serine
+			1.5.1.12 Cysteine
+			1.5.1.13 Phenylalanine
+			1.5.1.14 Tyrosine
+			1.5.1.15 Tryptophan
+			1.5.1.16 Histidine
+			1.5.1.17 Alanine biosynthesis I
+			1.5.1.18 Leucine/valine
+			1.5.1.19 Isoleucine
+			1.5.1.20 Chorismate
+			1.5.1.21 Homoserine
+			1.5.1.22 Ornithine
+			1.5.1.23 Selenocysteine
+			1.5.1.24 Glutamate biosynthesis I
+			1.5.1.25 Alanine biosynthesis III
+		1.5.2 Nucleotide
+			1.5.2.1	Purine biosynthesis
+			1.5.2.2	Pyrimidine biosynthesis
+			1.5.2.3	Purine ribonucleotide biosynthesis
+			1.5.2.4	Pyrimidine ribonucleotide/ribonucleoside biosynthesis
+		1.5.3 Cofactor, small molecule carrier
+			1.5.3.1	Biotin
+			1.5.3.2	Folic acid (tetrahydrofolate)
+			1.5.3.3	Lipoate
+			1.5.3.4	Molybdenum (molybdopterin)
+			1.5.3.5	Coenzyme A
+			1.5.3.6	Pyridoxine (vitamin B6)
+			1.5.3.7	Nicotinamide adenine dinucleotide (NAD)
+			1.5.3.8	Thiamine (Vitamin B1)
+			1.5.3.9	Riboflavin (Vitamin B2), FAD, FMN
+			1.5.3.10 Glutathione
+			1.5.3.11 Menaquinone (MK), ubiquinone (Q)
+			1.5.3.12 Heme, porphyrin
+			1.5.3.13 Cobalamin (Vitamin B12)
+			1.5.3.14 Enterochelin (enterobactin)
+			1.5.3.15 Chrysobactin
+			1.5.3.16 Achromobactin
+			1.5.3.19 Isoprenoid biosynthesis
+			1.5.3.20 Tetrahydrobiopterin biosynthesis
+			1.5.3.21 Pyochelin biosynthesis
+			1.5.3.22 Glutathione redox reactions
+			1.5.3.23 Pantothenate biosynthesis I
+			1.5.3.24 Folate polyglutamylation
+		1.5.4 Fatty acid and phosphatidic acid
+			1.5.4.1 Fatty acid  elongation - unsaturated
+			1.5.4.2 Fatty acid  elongation - saturated
+			1.5.4.3 Fatty acid biosynthesis -- initial steps
+	1.6 Macromolecules (cellular constituent)  biosynthesis
+		1.6.1 Phospholipid
+			1.6.1.1 Cyclopropane fatty acid (CFA) biosynthesis
+			1.6.1.2 Phospholipid biosynthesis I
+		1.6.2 Colanic acid (M antigen)
+		1.6.3 Lipopolysaccharide
+			1.6.3.1	O antigen
+			1.6.3.2	Core region
+			1.6.3.3	Lipid A
+		1.6.4 Enterobacterial common antigen  (surface glycolipid)
+		1.6.5 K antigen
+		1.6.6 Osmoregulated periplasmic glucan
+		1.6.7 Peptidoglycan (murein)
+		1.6.9 Polysaccharides, cytoplasmic 
+		1.6.10 Lipoprotein
+		1.6.11 Glycoprotein
+		1.6.12 Flagella
+		1.6.13 Fimbria, pili, curli
+		1.6.15 Large molecule carriers
+			1.6.15.1 Cytochromes
+			1.6.15.2 Thioredoxin, glutaredoxin 
+			1.6.15.3 Biotin carboxyl carrier protein
+			1.6.15.4 Acyl carrier protein
+		1.6.16 Cellulose biosynthesis
+		1.6.17 GDP-mannose metabolism
+		1.6.18 Siderophore
+	1.7 Central intermediary metabolism
+		1.7.1 Unassigned reversible reactions
+		1.7.2 Glyoxylate bypass
+		1.7.3 Pentose phosphate shunt, non-oxidative branch 
+		1.7.6 Glycerol metabolism
+			1.7.6.1 Glycerol degradation I
+			1.7.6.2Glycerol degradation II
+		1.7.7 Galactose metabolism
+		1.7.8 Gluconeogenesis
+		1.7.9 Misc. glucose metabolism 
+		1.7.10 Sugar nucleotide biosynthesis, conversions 
+		1.7.12 Amino sugar conversions
+		1.7.13 Amino acid conversion
+		1.7.14 Polyamine biosynthesis
+			1.7.14.1 Putrescine biosynthesis I
+			1.7.14.2 Putrescine biosynthesis III
+			1.7.14.3 Spermidine biosynthesis
+		1.7.15 2'-deoxyribonucleotide/ribonucleoside metabolism
+		1.7.17 Formyl-tetrahydrofolate biosynthesis
+		1.7.18 Betaine biosynthesis
+		1.7.19 Incorporation of metal ions
+		1.7.20 S-adenosyl methionine biosynthesis
+		1.7.21 Glyoxylate degradation
+		1.7.22 Carnitine metabolism
+		1.7.23 Methylglyoxal metabolism
+		1.7.24 Cyanate catabolism
+		1.7.25 Glycolate metabolism
+		1.7.26 Allantoin assimilation
+		1.7.27 Pyridoxal 5'-phosphate salvage
+		1.7.28 Pyruvate catabolism
+		1.7.29 Acetate catabolism
+		1.7.31 Aminobutyrate catabolism
+		1.7.32 Putrescine catabolism
+			1.7.32.1 Putrescine degradation I
+			1.7.32.2 Putrescine degradation II
+		1.7.33 Nucleotide and nucleoside conversions
+			1.7.33.1 Salvage pathways of adenine, hypoxanthine, and their nucleosides
+			1.7.33.2 Salvage pathways of guanine, xanthine, and their nucleosides
+			1.7.33.3 Salvage pathways of pyrimidine deoxyribonucleotides
+			1.7.33.4 Salvage pathways of pyrimidine ribonucleotides
+		1.7.34 Peptidoglycan (murein) turnover, recycling
+		1.7.35 Lactate oxidation
+		1.7.36 Trehalose biosynthesis
+		1.7.37 C1 assimilation, serine pathway
+		1.7.38 Methionine salvage pathway
+		1.7.39 Conversion of succinate to propionate
+		1.7.40 Fructoselysine and psicoselysine degradation
+		1.7.41 PRPP biosynthesis I
+		1.7.42 PRPP biosynthesis II
+		1.7.43 ppGpp biosynthesis
+		1.7.44 NAD phosphorylation and dephosphorylation
+		1.7.45 Pyridine nucleotide cycling
+		1.7.46 Pyridine nucleotide synthesis
+	1.8 Metabolism of other compounds
+		1.8.1 Phosphorous metabolism
+		1.8.2 Sulfur metabolism
+			1.8.2.1 Sulfate assimilation
+		1.8.3 Nitrogen metabolism
+
+2 Information transfer
+	2.1 DNA related
+		2.1.1 DNA replication 
+		2.1.2 DNA restriction/modification
+		2.1.3 DNA recombination
+		2.1.4 DNA repair
+		2.1.5 DNA degradation
+	2.2 RNA related
+		2.2.2 Transcription related 
+		2.2.3 RNA modification
+		2.2.4 RNA degradation 
+		2.2.5 tRNA
+		2.2.6 rRNA, stable RNA
+		2.2.7 Antisense RNA
+	2.3 Protein related
+		2.3.1 Amino acid-activation
+		2.3.2 Translation 
+		2.3.3 Posttranslational modification 
+		2.3.4 Chaperoning, folding
+		2.3.5 Export, signal peptide cleavage
+		2.3.6 Turnover, degradation
+		2.3.7 Nucleoproteins, basic proteins
+		2.3.8 Ribosomal proteins
+		2.3.9 Non-ribosomal peptide synthetase
+
+3 Regulation 
+	3.1. Type of regulation 
+		3.1.1 DNA structure level
+			3.1.1.1 DNA bending, supercoiling, inversion
+			3.1.1.2 Methylation
+		3.1.2 Transcriptional level
+			3.1.2.1 Sigma factors, anti-sigmafactors
+			3.1.2.2 Activator
+			3.1.2.3 Repressor
+			3.1.2.4 Complex regulation
+				3.1.2.4.1 More than one signal needed 
+				3.1.2.4.2 Regulons or multilayer component regulatory systems 
+				3.1.2.4.3 Two-component regulatory systems (external signal) 
+				3.1.2.4.4 Quorum sensing
+			3.1.2.5 Action unknown
+		3.1.3 Posttranscriptional
+			3.1.3.1 Translation attenuation and efficiency
+			3.1.3.2 Covalent modification, demodification, maturation
+			3.1.3.3 Inhibition / activation of enzymes
+			3.1.3.4 Proteases, cleavage of compounds
+			3.1.3.5 Multilayer regulatory systems
+			3.1.3.6 Antisense RNA
+			3.1.3.7 binding, sequestering
+		3.1.4 Regulation level unknown
+	3.3 Genetic unit regulated
+		3.3.1 Operon (regulation of one operon)
+		3.3.2 Regulon (a network of operons encoding related functions)
+		3.3.3 Stimulon (ie. environmental stimulus)
+		3.3.4 Global 
+	3.4 Trigger (some information added)
+	3.5 Trigger modulation (some information added)
+
+4 Transport
+	4.1 Channel-type Transporters
+		4.1.A. alpha-type channels
+			4.1.A.1. The Voltage-gated Ion Channel (VIC) Superfamily
+			4.1.A.8. The Major Intrinsic Protein (MIP) Family
+			4.1.A.11 The Chloride Channel (ClC) Family
+			4.1.B.17 The Outer Membrane Factor (OMF) Family
+			4.1.A.22 The Large Conductance Mechanosensitive Ion Channel (MscL) Family
+			4.1.A.23 The Small Conductance Mechanosensitive Ion Channel (MscS) Family
+			4.1.A.46  The H+- or Na+-translocating Bacterial Flagellar Motor (Mot) Family
+		4.1.B Beta barrel porins (The Outer Membrane Porin (OMP) Functional Superfamily)
+			4.1.B.1 The General Bacterial Porin (GBP) Family
+			4.1.B.3 The Sugar Porin (SP) Family
+			4.1.B.9 The FadL Outer Membrane Protein (FadL) Family
+			4.1.B.10 The Nucleoside-specific Channel-forming Outer Membrane Porin (Tsx) Family
+			4.1.B.14 The Outer Membrane Receptor (OMR) Family
+			4.1.B.21 The OmpG Porin (OmpG) Family
+	4.2  Electrochemical potential driven transporters
+		4.2.A. Porters (Uni-, Sym- and Antiporters)
+			4.2.A.1 The Major Facilitator Superfamily (MFS)
+			4.2.A.2 The Glycoside-Pentoside-Hexuronide (GPH):Cation Symporter Family
+			4.2.A.3 The Amino Acid-Polyamine-Choline (APC) Family
+			4.2.A.4 The Cation Diffusion Facilitator (CDF) Family
+			4.2.A.6 The Resistance-Nodulation-Cell Division (RND) Superfamily
+			4.2.A.7 The Drug/Metabolite Transporter (DMT) Superfamily
+			4.2.A.8 The Gluconate:H+ Symporter (GntP) Family
+			4.2.A.9 The Cytochrome oxidase biogenesis (Oxa1) Family
+			4.2.A.10 The 2-Keto-3-Deoxygluconate Transporter (KDGT) Family
+			4.2.A.13 The C4-Dicarboxylate Uptake (Dcu) Family
+			4.2.A.14 The Lactate Permease (LctP) Family
+			4.2.A.15 The Betaine/Carnitine/Choline Transporter (BCCT) Family
+			4.2.A.16 The Telurite-resistance/Dicarboxylate Transporter (TDT) Family
+			4.2.A.17 The Proton-dependent Oligopeptide Transporter (POT) Family
+			4.2.A.19 The Ca2+:Cation Antiporter (CaCA) Family
+			4.2.A.20 The Inorganic Phosphate Transporter (PiT) Family
+			4.2.A.21 The Solute:Sodium Symporter (SSS) Family
+			4.2.A.23 The Dicarboxylate/Amino Acid:Cation (Na+ or H+) Symporter (DAACS) Family
+			4.2.A.25 The Alanine/Glycine:Cation symporter (AGCS) Family	
+			4.2.A.26 The Branched Chain Amino Acid:Cation Symporter (LIVCS) Family
+			4.2.A.27 The Glutamate:Na+ Symporter (GltS) Family
+			4.2.A.33 The NhaA Na+:H+ Antiporter (NhaA) Family
+			4.2.A.34 The NhaB Na+:H+ Antiporter (NhaB) Family
+			4.2.A.36 The Monovalent Cation:Proton Antiporter-1 (CPA1) Family
+			4.2.A.37 The Monovalent Cation:Proton Antiporter-2 (CPA2) Family
+			4.2.A.38 The K+ Transporter (Trk) Family
+			4.2.A.39 The Nucleobase:Cation Symporter-1 (NCS1) Family
+			4.2.A.40 The Nucleobase:Cation Symporter-2 (NCS2) Family
+			4.2.A.41 The Concentrative Nucleoside Transporter (CNT) Family
+			4.2.A.42 The Hydroxy/Aromatic Amino Acid Permease (HAAAP) Family
+			4.2.A.44 The Formate-Nitrite Transporter (FNT) Family
+			4.2.A.45 The Metal Ion Transporter (MIT) Family
+			4.2.A.47 The Divalent Anion:Na+ Symporter (DASS) Family
+			4.2.A.49 The Ammonium Transporter (Amt) Family
+			4.2.A.53 The Sulfate Permease (SulP) Family
+			4.2.A.55 The Manganese (Nramp) Fam.
+			4.2.A.58 The Phosphate:Na+ Symporter (PNaS) Family
+			4.2.A.61 The C4-dicarboxylate Uptake C (DcuC) Family
+			4.2.A.64 The Type V Secretory Pathway or Twin Arginine Targeting (Tat) Family
+			4.2.A.66 The Multi Antimicrobial Extrusion (MATE) Family
+			4.2.A.68 The p-Aminobenzoyl-glutamate Transporter (AbgT) Family
+			4.2.A.69 The Auxin Efflux Carrier (AEC) Family
+			4.2.A.72 The K+ uptake permease (KUP) family 
+			4.2.A.75 The L-lysine exporter (LysE) family
+			4.2.A.76 The Resistance to Homoserine/Threonine (RhtB) Family
+		4.2.C Ion-gradient driven energizers
+			4.2.C.1 TonB Family of Auxiliary Proteins for Energization of OMR-mediated Transport
+	4.3 Primary Active Transporters
+		4.3.A. Pyrophosphate Bond (ATP; GTP; P2) Hydrolysis-driven Active Transporters
+			4.3.A.1 The ATP-binding Cassette (ABC) Superfamily + ABC-type Uptake Permeases
+				4.3.A.1.a ATP binding component
+				4.3.A.1.m membrane component
+				4.3.A.1.p periplasmic binding component
+				4.3.A.1.am ATP binding and membrane component
+			4.3.A.2 The H+/Na+-translocating F-, V- and A-type ATPase (F-ATPase) Superfamily
+			4.3.A.3 The P-type ATPase (P-ATPase) Superfamily
+			4.3.A.4 The Arsenite-Antimonite (Ars) Efflux Family
+			4.3.A.5 The Type II (General) Secretory Pathway (IISP) Family
+			4.3.A.6 The Type III (Virulence-related) Secretory Pathway (IIISP) Family
+			4.3.A.7 The Type IV (Conjugal DNA-Protein Transfer) Secretory Pathway (IVSP) Family
+		4.3.D. Oxidoreduction-driven Active Transporters
+			4.3.D.1 The Proton- or sodium ion-translocating NADH Dehydrogenase (NDH) Family
+			4.3.D.4 The Proton-translocating Cytochrome Oxidase (COX) Superfamily
+	4.4 Group Translocators
+		4.4.A Phosphotransferase Systems (PEP-dependent PTS)
+			4.4.A.1 The PTS Glucose-Glucoside (Glc) Family
+			4.4.A.2 The PTS Fructose-Mannitol (Fru) Family
+			4.4.A.3 The PTS Lactose-N,N'-Diacetylchitobiose-betaucoside (Lac) Family
+			4.4.A.4 The PTS Glucitol (Gut) Family
+			4.4.A.5 The PTS Galactitol (Gat) Family
+			4.4.A.6 The PTS Mannose-Fructose-Sorbose (Man) Family
+	4.8.A Accessory Factors Involved in Transport
+		4.8.A.1 The Membrane Fusion Protein (MFP) Family
+		4.8.A.2 The Secretin Auxiliary Lipoprotein (SAL) Family
+		4.8.A.3 MPA1 Family auxillary transport protein
+		4.8.A.7 The Phosphotransferase System Enzyme I (EI) Family
+		4.8.A.8 The Phosphotransferase System HPr (HPr) Family
+	4.9.A Transporters of Unknown Classification
+		4.9.A Recognized transporters of unknown biochemical mechanism
+			4.9.A.1 The Polysaccharide Transporter (PST) Family
+			4.9.A.4 The Nicotinamide Mononucleotide (NMN) Uptake Permease (PnuC) Family
+			4.9.A.8 The Ferrous Iron Uptake (FeoB) Family
+			4.9.A.13 The Short Chain Fatty Acid Transporter (scFAT) Family
+			4.9.A.16 The Septal DNA Translocator (SDT) Family
+			4.9.A.17 The Metal Ion Transporter (MIT) Family
+		4.9.B Putative uncharacterized transport protein
+			4.9.B.3 The Putative Bacterial Murein Precursor Exporter (MPE) Family
+			4.9.B.4  The Putative Efflux Transporter (PET) Family
+			4.9.B.6 The Toxic Hok/Gef Protein (Hok/Gef) Family
+			4.9.B.10 The 6TMS Putative MarC Transporter (MarC) Family
+			4.9.B.18 The SecDF-associated Single Transmembrane Protein (SSTP) Family
+			4.9.B.21 The Frataxin (Frataxin) Family
+			4.9.B.22 The Putative Permease (PerM) Family
+			4.9.B.24 The Testis-Enhanced Gene Transfer (TEGT) Family
+			4.9.B.25 The YbbM (YbbM) Family
+			4.9.B.27 The YdjX-Z (YdjX-Z) Family
+			4.9.B.28 The YqaE (YqaE) Family
+			4.9.B.29 The YebN (YebN) Family
+			4.9.B.31 The YqiH (YqiH) Family
+			4.9.B.32 The Putative Vectorial Glycosyl Polymerization (VGP) Family
+		4.S substrate
+			4.S.1 (D)-galactarate
+			4.S.2 2-keto-3-deoxy-D-gluconate
+			4.S.3 3-hydroxyphenylpropionic acid
+			4.S.4 3-phenylpropionic acid
+			4.S.5 alkanesulfonate
+			4.S.6 alkanesulphonate
+			4.S.8 alkylphosphonate
+			4.S.9 allantoin
+			4.S.10 allose/ribose
+			4.S.11 alpha-ketoglutarate
+			4.S.12 amino acid
+			4.S.13 amino acid/amide
+			4.S.14 ammonium
+			4.S.15 antibiotic
+			4.S.16 arabinose polymer
+			4.S.17 arginine
+			4.S.18 arginine/ornithine
+			4.S.19 arsenite
+			4.S.20 benzoate
+			4.S.21 lactose/glucose
+			4.S.22 beta-glucoside
+			4.S.25 Ca+/ H+
+			4.S.26 cadaverine/lysine
+			4.S.27 carnitine
+			4.S.28 cation
+			4.S.29 cellobiose/arbutin/salicin
+			4.S.31 chloramphenicol
+			4.S.32 chloride
+			4.S.33 choline
+			4.S.34 citrate/succinate
+			4.S.35 colicin
+			4.S.36 Cu+
+			4.S.37 curli subunit
+			4.S.38 cyanate
+			4.S.39 cysteine
+			4.S.40 cysteine/O-acetyl-L-serine/cysteine metabolites
+			4.S.41 cytosine
+			4.S.42 D-alanine/D-serine/glycine
+			4.S.43 D-galactonate
+			4.S.44 D-glucarate
+			4.S.45 D-glucose/trehalose
+			4.S.46 dicarboxylate
+			4.S.47 dipeptide
+			4.S.48 D-ribose
+			4.S.49 drug
+			4.S.50 D-xylose
+			4.S.51 enterochelin
+			4.S.52 fatty acid
+			4.S.53 Fe
+			4.S.54 Fe++
+			4.S.56 ferric enterobactin
+			4.S.57 ferric hydroxamate
+			4.S.58 ferrichrome
+			4.S.59 formate
+			4.S.60 formate/oxalate
+			4.S.61 fosfidomycin/H+
+			4.S.63 fructose
+			4.S.64 fucose
+			4.S.65 galactitol
+			4.S.66 galactose/H+
+			4.S.67 gamma-aminobutyrate
+			4.S.68 glucitol/sorbitol
+			4.S.69 gluconate
+			4.S.70 gluconate/L-idonate
+			4.S.71 glucose
+			4.S.72 glucose/maltose
+			4.S.73 glucuronide
+			4.S.74 glutamate/aminobutyric acid
+			4.S.75 glutamate/aspartate
+			4.S.76 glutamine
+			4.S.77 glycerol
+			4.S.78 glycerol-3-P
+			4.S.79 glycine betaine/choline
+			4.S.80 glycine betaine/proline
+			4.S.81 group A colicin
+			4.S.82 H+
+			4.S.83 H+/acridine
+			4.S.84 H+/lactose/glucose
+			4.S.85 heme
+			4.S.86 hexose phosphate
+			4.S.87 hexuronate
+			4.S.88 histidine
+			4.S.89 histidine/lysine/arginine/ornithine
+			4.S.90 homoserine/lactone
+			4.S.91 hydrophilic molecule
+			4.S.92 hydrophilic molecules
+			4.S.93 ion
+			4.S.95 iron dicitrate
+			4.S.96 K+
+			4.S.97 K+/H+
+			4.S.98 lactate
+			4.S.99 lactose
+			4.S.100 L-arabinose
+			4.S.101 L-arabinose /H+
+			4.S.102 L-arabinose/ isopropyl-beta-D-thiogalactopyranoside
+			4.S.103 L-asparagine
+			4.S.104 lipooligosaccharides
+			4.S.105 lipopolysaccharide
+			4.S.106 lipoprotein
+			4.S.107 L-lactate
+			4.S.108 L-leucine/L-valine/L-iso-leucine
+			4.S.109 L-rhamnose/H+
+			4.S.110 L-threonine/L-serine
+			4.S.111 lysine
+			4.S.112 lysine/arginine/ornithine
+			4.S.113 maltose
+			4.S.114 maltose/maltodextrin
+			4.S.115 mannitol
+			4.S.116 mannose
+			4.S.117 melibiose
+			4.S.118 methionine
+			4.S.119 methylgalactoside/galactose
+			4.S.120 Mg++
+			4.S.121 Mg2+/Ni2+/Co2+
+			4.S.122 microcin B17
+			4.S.123 Mn+/H+
+			4.S.124 molybdate
+			4.S.125 molybdenum
+			4.S.126 multidrug
+			4.S.127 multidrug/bicyclomycin
+			4.S.128 muropeptide
+			4.S.129 myo-inositol
+			4.S.130 Na+
+			4.S.131 Na+/ alanine/glycine
+			4.S.132 Na+/ H+
+			4.S.133 Na+/Ca+
+			4.S.134 Na+/dicarboxylate
+			4.S.135 Na+/glutamate/aspartate
+			4.S.136 Na+/H+
+			4.S.137 Na+/leucine/valine/iso-leucine
+			4.S.138 Na+/pantothenate
+			4.S.139 Na+/proline
+			4.S.140 Na+/serine/threonine
+			4.S.141 N-acetylgalactosamine
+			4.S.142 N-acetylglucosamine
+			4.S.143 Ni++
+			4.S.144 nicotinamide mononucleotide
+			4.S.145 nitrite
+			4.S.146 nucleoside
+			4.S.147 nucleoside/H+
+			4.S.148 oligopeptide
+			4.S.150 p-aminobenzoyl-glutamate
+			4.S.151 Pb/Cd/Zn/Hg
+			4.S.152 peptide
+			4.S.153 phenylalanine
+			4.S.154 phenylalanine/ tyrosine
+			4.S.155 phosphate
+			4.S.156 polymyxin
+			4.S.158 proline
+			4.S.159 proline/betaine
+			4.S.160 protein
+			4.S.161 protein/DNA
+			4.S.162 purine/xanthine
+			4.S.163 putrescine
+			4.S.164 putrescine/ornithine
+			4.S.166 putrescine/spermidine
+			4.S.167 serine
+			4.S.168 shikimate/dehydroshikimate
+			4.S.169 sialic acid
+			4.S.170 S-methylmethionine
+			4.S.172 sucrose
+			4.S.173 sugar
+			4.S.174 sulfate
+			4.S.175 taurine
+			4.S.176 tellurite
+			4.S.177 thiamine
+			4.S.178 thiosulfate
+			4.S.179 thiosulfate/sulfate
+			4.S.180 threonine
+			4.S.181 trehalose
+			4.S.182 tripeptide
+			4.S.183 tryptophan
+			4.S.184 tyrosine
+			4.S.185 uracil
+			4.S.187 vitamin B12
+			4.S.188 water
+			4.S.189 xanthosine
+			4.S.190 xylose/H+
+			4.S.191 Zn
+			4.S.192 chrysobactin
+			4.S.193 achromobactin
+			4.S.194 acetate
+			4.S.195 2-O-alpha-mannosyl-D-glycerate
+			4.S.196 Zn(2+)
+			4.S.197 N-acetylmuramic acid (MurNAc)
+
+5 Cell processes
+	5.1 Cell division
+	5.2 Cell cycle physiology
+	5.3 Motility (incl. chemotaxis, energytaxis, aerotaxis, redoxtaxis)
+	5.4 Genetic exchange, recombination
+	5.5 Adaptation to stress
+		5.5.1 Osmotic pressure
+		5.5.2 Temperature extremes
+		5.5.3 Starvation response
+		5.5.4 pH response
+		5.5.5 Dessication
+		5.5.6 Other stresses (mechanical, nutritional, oxidative)
+		5.5.7 Fe aquisition
+	5.6 Protection
+		5.6.1 Radiation
+		5.6.2 Detoxification (xenobiotic metabolism)
+		5.6.3 Cell killing
+		5.6.4 Drug resistance/sensitivity
+	5.8 SOS response
+	5.10 Defense/survival 
+	5.11 DNA uptake
+	5.12 Biofilm production
+	5.13 Virulence associated
+	5.14 Cell-cell communication
+
+6 Cell structure
+	6.1 Membrane 
+	6.2 Peptidoglycan (murein)
+	6.3 Surface antigens (ECA, O antigen of LPS)
+	6.4 Flagellum
+	6.5 Pilus
+	6.6 Ribosome
+	6.7 Capsule (M and K antigens)
+
+7 Location of gene products 
+	7.1 Cytoplasm
+	7.2 Periplasmic space
+	7.3 Inner membrane
+	7.4 Outer membrane 
+	7.5 Extracellular
+
+8 extrachromosomal
+	8.1 Prophage genes and phage related functions
+		8.1.1 DNA packaging, phage assembly
+		8.1.2 Replication
+		8.1.3 Regulation
+		8.1.4 Integration, recombination
+		8.1.5 Lysis
+		8.1.6 Structural component
+	8.2 Plasmid related
+		8.2.1 replication and maintenance
+		8.2.2 plasmid transfer
+	8.3 Transposon related
+		8.3.1 transposases
+		8.3.2 regulation of mobility
+	8.4 Colicin related
+
+9 DNA sites
+
+10 cryptic genes
+
