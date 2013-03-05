@@ -28,28 +28,8 @@ sys.setrecursionlimit(10000000)
 
 ribogenes = ['rpsA', 'rpsB','rpsC','rpsD','rpsE','rpsF','rpsG','rpsH','rpsI','rpsJ','rpsK','rpsL','rpsM','rpsN','rpsO','rpsP','rpsQ','rpsR','rpsS','rpsT','rpsU','sra','rplA','rplB','rplC','rplD','rplE','rplF','rplJ','rplL','rplI','rplK','rplM','rplN','rplO','rplP','rplQ','rplR','rplS','rplT','rplU','rplV','rplW','rplX','rplY','rpmA','rpmB','rpmC','rpmD','rpmE','rpmF','rpmG','rpmH','rpmI','rpmJ']
 
-#returns the theoretical trypsin digest of a protein
 def seqlength(seq):
-    """Returns the resultant set of peptides from a theoretical trypsin digest.
-
-    Args:
-       seq (str):  The input protein to be digested.
-
-    Kwargs:
-       state (bool): Current state to be in.
-
-    Returns:
-       str list.  The set of peptides
-
-    Raises:
-       TypeError
-
-    A really great idea.  A way you might use me is
-
-    >>> qMS.seqlength('ESBUEFVIESVGIURSVGIJRVSIRKSDBJSKBVOISBDOIVBOSIVOISEPISEBOIFBSOISBRIOSBRGIOSBRORKSBIOVBOIRSVIOISORVPUVBSUIVUIVIURVURSVUIRRKJVSUIVIUVCUOAVIUVUIIUCE')
-    ['ESBUEFVIESVGIUR', 'SVGIJR', 'VSIR', 'K', 'SDBJSK', 'BVOISBDOIVBOSIVOISEPISEBOIFBSOISBR', 'IOSBR', 'GIOSBR', 'OR', 'K', 'SBIOVBOIR', 'SVIOISOR', 'VPUVBSUIVUIVIUR', 'VUR', 'SVUIR', 'R', 'K', 'JVSUIVIUVCUOAVIUVUIIUCE']
-
-    """
+#returns the theoretical trypsin digest of a protein
     return re.sub(r'(?<=[RK])(?=[^P])','-', seq).split("-")
 
 #fetches protein sequence from uniprot ID
