@@ -31,6 +31,16 @@ ribogenes = ['rpsA', 'rpsB','rpsC','rpsD','rpsE','rpsF','rpsG','rpsH','rpsI','rp
 def seqlength(seq):
 #returns the theoretical trypsin digest of a protein
     return re.sub(r'(?<=[RK])(?=[^P])','-', seq).split("-")
+    
+def importFormatTH(filename):
+    # Open the data, separate on tabs and store as a list of lists
+    file = list(csv.reader(open(filename, 'rU'), delimiter = "\t"))
+    # Take the second line which contains the growth rate information
+    header = map(float,  file[1][1:])
+    # Store the data series as values with the gene names as keys
+    gene_data_dict = {item[0]: map(float, item[1:]) for item in file[2:]}
+    return gene_data_dict
+
 
 #fetches protein sequence from uniprot ID
 def getsequence(uniprot):
@@ -181,8 +191,7 @@ def labels(gene):
     	print "gene " + gene + " not found in database"
 #---------------------------------------------------------#
 
-# Returns dictionaries mapping operon to genes and genes to operon
-
+# Returns two dictionaries, one which maps operons to their genes and a second which maps genes to their operon
 def getOperons():
     # Open file
     datapath = '/Users/joshsilverman/Desktop/qMSmodule/OperonSet.txt'
